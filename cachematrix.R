@@ -17,7 +17,7 @@ makeCacheMatrix <- function(x = matrix()) {
   # Function to retrieve the stored matrix
   get <- function() x
   # Function to invert supplied matrix
-  setSolve <- function(solve) solved <<- solve
+  setSolve <- function() solved <<- solve(x)
   # Function get inverted matrix
   getSolve <- function() solved
   # Retun list of functions
